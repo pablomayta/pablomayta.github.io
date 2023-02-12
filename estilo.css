@@ -1,0 +1,304 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.2);
+}
+
+.box .izquierdo {
+   position: relative;
+   background-color: antiquewhite;
+   padding: 40px;
+}
+
+.nombre{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(195, 45, 115, 0.2);
+}
+
+.sobremi{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(195, 45, 115, 0.2);
+}
+
+.sobremi h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.sobremi h6{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.nombre .perfil img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+}
+
+.nombre h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+}
+
+.nombre h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+}
+
+.contacto {
+    padding-top:  20px;
+    border-bottom: 2px solid rgba(195, 45, 115, 0.2);
+    padding-bottom: 20px;
+}
+
+.contacto h4{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contacto ul {
+    position: relative;
+}
+
+.contacto ul li{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.contacto ul li .logo{
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    color: blueviolet;
+}
+
+.habilidades .barra{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: lightpink;
+    display: block;
+    margin-top: 5px;
+}
+
+.habilidades .barra div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(185, 78, 100);
+}
+
+.habilidades h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.habilidades ul li{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.habilidades {
+    border-bottom: 2px solid rgba(195, 45, 115, 0.2);
+    padding-bottom: 20px;
+}
+
+.idioma .barra{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: lightpink;
+    display: block;
+    margin-top: 5px;
+}
+
+.idioma .barra div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(185, 78, 100);
+}
+
+.idioma h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.idioma ul li{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.box .derecho {
+    position: relative;
+    background-color: white;
+    padding: 40px;
+}
+
+.experiencia{
+    margin-bottom: 30px;
+}
+
+.experiencia h2{
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    background-color: antiquewhite;
+    color: brown;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.experiencia .caja{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.experiencia .caja .compañia{
+    min-width: 200px;
+}
+
+.experiencia .caja .compañia h3{
+    text-transform: uppercase;
+    color: rgb(68, 57, 57);
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.experiencia .caja .texto h4{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: brown;
+}
+
+.programa .caja{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.programa .caja h4{
+    text-transform: uppercase;
+    color: rgb(68, 57, 57);
+    font-weight: 500;
+}
+
+.programa .caja .porcentaje{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: lightpink;
+}
+
+.programa .caja .porcentaje div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(185, 78, 100);
+}
+
+.colegio h3{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    font-size: 20px;
+    color: brown;
+}
+
+.colegio h4{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    list-style: none;
+    margin: 5px 0;
+    font-size: 16px;
+    color: gray;
+}
+
+
+@media (max-width: 1024px){
+    .box{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width: 767px){
+    .experiencia .caja{
+        flex-direction: column;
+    }
+    .experiencia .compañia{
+        margin-bottom: 10px;
+    }
+}
